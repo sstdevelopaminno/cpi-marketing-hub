@@ -17,10 +17,10 @@ Current release: **V0.1 prototype**. This build establishes the dashboard, produ
 
 ## Database target
 
-This repository is assigned to **Supabase base 2: CpiPOS-002**.
+This repository is assigned to **Supabase: CpiPOS-Communications**.
 
-- Project ref: `kawenyvpentwgugtzqec`
-- Project URL: `https://kawenyvpentwgugtzqec.supabase.co`
+- Project ref: `wznixoeezgyhtwurcswb`
+- Project URL: `https://wznixoeezgyhtwurcswb.supabase.co`
 - Initial schema: `supabase/schema.sql`
 
 The schema enables Row Level Security on every public table and intentionally ships with no browser-access policies yet. Real provider tokens and Supabase secret keys must never be committed to GitHub.
@@ -36,6 +36,10 @@ Open `http://localhost:3000`.
 ## Environment variables
 
 Copy `.env.example` to `.env` and fill credentials locally or in the deployment environment. The repository only contains placeholders; no live secrets should be committed.
+
+## Application model
+
+CPI Marketing Hub is a **web application first**. It will run centrally on Vercel so OAuth callbacks, webhooks, scheduled jobs and background sync continue even when a user's computer is off. A PWA/installable desktop-like shell can be added later without creating a separate backend.
 
 ## Production roadmap
 
