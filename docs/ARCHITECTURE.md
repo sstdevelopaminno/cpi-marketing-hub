@@ -13,9 +13,15 @@ Use internally for CUTTING POINT INNOVATION first, then expand to a multi-tenant
 7. Automation rules
 8. Connections / OAuth
 
+## Delivery model
+- Primary product: Web App (responsive, installable as PWA later)
+- No Windows-only desktop dependency for V1
+- OAuth callbacks, webhooks, scheduled sync and automation remain server-side and continue when user devices are offline
+
 ## Planned production stack
 - Web: Next.js App Router + TypeScript
-- Database/Auth: Supabase PostgreSQL + Auth + RLS
+- Database/Auth: Supabase PostgreSQL + Auth + RLS (`CpiPOS-Communications`, ref `wznixoeezgyhtwurcswb`)
+- Marketing tables must be isolated from the existing support/contact domain
 - Hosting: Vercel
 - Scheduled jobs: Vercel Cron or Supabase scheduled jobs
 - Integrations: Meta Marketing API, Google Ads API, Search Console API, GA4 Data API, YouTube Data/Analytics APIs
