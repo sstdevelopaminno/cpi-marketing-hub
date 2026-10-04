@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#08111f">
+  <title>CPI Marketing Hub</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand"><div class="brand-mark">CPI</div><div><strong>CPI Marketing Hub</strong><span>CUTTING POINT INNOVATION</span></div></div>
+    <nav class="nav">
+      <button class="nav-item active" data-section="overview">⌂ ภาพรวม</button>
+      <button class="nav-item" data-section="meta">f Meta Ads</button>
+      <button class="nav-item" data-section="google">G Google Ads</button>
+      <button class="nav-item" data-section="seo">↗ SEO</button>
+      <button class="nav-item" data-section="youtube">▶ YouTube</button>
+      <button class="nav-item" data-section="content">✦ Content AI</button>
+      <button class="nav-item" data-section="automation">⚡ Automation</button>
+      <button class="nav-item" data-section="connections">⛓ Connections</button>
+    </nav>
+    <div class="sidebar-footer"><span class="status-dot"></span><div><b>Prototype V0.1</b><small>Safe / Read-only first</small></div></div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <button class="mobile-menu" id="mobileMenu">☰</button>
+      <div><p class="eyebrow">Workspace</p><h1 id="pageTitle">Marketing Overview</h1></div>
+      <div class="top-actions"><button class="ghost-btn" id="syncBtn">↻ Sync</button><button class="primary-btn" data-open="campaignModal">+ สร้างแคมเปญ</button></div>
+    </header>
+
+    <section class="page active" id="overview">
+      <div class="notice"><b>โหมดทดสอบภายในบริษัท</b><span>ข้อมูลเป็น Mock Data ก่อนเชื่อม API จริง</span></div>
+      <div class="metrics-grid">
+        <article class="metric-card"><span>ค่าโฆษณาเดือนนี้</span><strong>฿12,480</strong><small>Meta + Google</small></article>
+        <article class="metric-card"><span>Leads</span><strong>164</strong><small>฿76.10 / Lead</small></article>
+        <article class="metric-card"><span>ลูกค้าใหม่</span><strong>21</strong><small>Conversion 12.8%</small></article>
+        <article class="metric-card"><span>ROAS</span><strong>3.42x</strong><small>เป้าหมาย ≥ 2.5x</small></article>
+      </div>
+      <div class="two-col">
+        <article class="panel"><div class="panel-head"><div><p class="eyebrow">Campaigns</p><h2>แคมเปญล่าสุด</h2></div></div>
+          <div class="rows"><div><b>CpIPOS ร้านอาหาร</b><span>Meta · Active · CPL ฿52</span></div><div><b>POS ร้านกาแฟ</b><span>Google · Active · CPL ฿68</span></div><div><b>Retarget Website</b><span>Meta · Learning · CPL ฿81</span></div></div>
+        </article>
+        <article class="panel"><div class="panel-head"><div><p class="eyebrow">Connections</p><h2>สถานะ API</h2></div><button class="text-btn" data-go="connections">ตั้งค่า →</button></div>
+          <div class="rows"><div><b>Meta Ads</b><span class="pending">ยังไม่เชื่อม</span></div><div><b>Google</b><span class="pending">ยังไม่เชื่อม</span></div><div><b>YouTube</b><span class="pending">ยังไม่เชื่อม</span></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="page" id="meta"><article class="hero-card"><div><p class="eyebrow">Meta Marketing API</p><h2>Facebook + Instagram Ads</h2><p>เริ่มจาก Read-only Insights ก่อน แล้วค่อยเปิดการสร้าง/แก้ไข Campaign หลังผ่าน App Review และมี Approval Guard</p></div><button class="primary-btn connect-btn" data-provider="Meta">เชื่อม Meta</button></article><div class="module-grid"><article class="panel"><h3>Campaign Insights</h3><p>Spend, Impressions, CTR, CPC, Leads และ Conversion</p></article><article class="panel"><h3>Safety</h3><p>ยังไม่อนุญาตระบบเพิ่มงบหรือหยุดแคมเปญอัตโนมัติจนกว่าจะเปิด Approval</p></article></div></section>
+
+    <section class="page" id="google"><article class="hero-card"><div><p class="eyebrow">Google Ads API</p><h2>Search / Display / YouTube Ads</h2><p>รวมงบ แคมเปญ คีย์เวิร์ด Conversion และ ROAS ใน Dashboard เดียว</p></div><button class="primary-btn connect-btn" data-provider="Google Ads">เชื่อม Google Ads</button></article><div class="module-grid"><article class="panel"><h3>Reporting First</h3><p>อ่านผลลัพธ์ก่อนเปิด Write Scope</p></article><article class="panel"><h3>Conversion</h3><p>เตรียมเชื่อม GA4 และ Conversion actions</p></article></div></section>
+
+    <section class="page" id="seo"><article class="hero-card"><div><p class="eyebrow">SEO Center</p><h2>Google Search Console + Site Audit</h2><p>ดู Query, Clicks, Impressions, CTR, Position และโอกาส Keyword จากเว็บบริษัท</p></div><button class="primary-btn connect-btn" data-provider="Search Console">เชื่อม Search Console</button></article><div class="module-grid"><article class="panel"><h3>Keyword Opportunities</h3><p>หา Keyword อันดับ 8–20 เพื่อดันขึ้นหน้าแรก</p></article><article class="panel"><h3>Technical Audit</h3><p>Title, Meta, ALT, Canonical, Sitemap และ Page Speed</p></article></div></section>
+
+    <section class="page" id="youtube"><article class="hero-card"><div><p class="eyebrow">YouTube</p><h2>Channel + Analytics</h2><p>ดึง Video, Views, Watch time และข้อมูล Channel ส่วนโฆษณาใช้ Google Ads API</p></div><button class="primary-btn connect-btn" data-provider="YouTube">เชื่อม YouTube</button></article></section>
+
+    <section class="page" id="content"><article class="hero-card"><div><p class="eyebrow">Content AI</p><h2>สร้างคอนเทนต์หลายช่องทาง</h2><p>Facebook, Instagram, YouTube และ SEO จาก Brief เดียว</p></div><button class="primary-btn" id="generateContent">สร้าง Draft</button></article><div class="panel"><div class="channels"><button class="channel active">Facebook</button><button class="channel active">Instagram</button><button class="channel">YouTube</button><button class="channel">Website SEO</button></div><div class="draft" id="draftBox">Draft จะปรากฏตรงนี้</div></div></section>
+
+    <section class="page" id="automation"><article class="hero-card"><div><p class="eyebrow">Rule Engine</p><h2>Automation แบบมี Guardrail</h2><p>ทุกกฎเริ่มใน Dry-run และการเปลี่ยนงบต้องขออนุมัติ</p></div><button class="primary-btn" id="newRule">+ สร้าง Rule</button></article><div class="panel"><div class="rows"><div><b>Spend > ฿500 และ Leads = 0</b><span>เสนอ Pause · ต้องอนุมัติ</span></div><div><b>CTR < 0.8%</b><span>แจ้งเตือน Creative</span></div><div><b>CPL < ฿60</b><span>เสนอเพิ่มงบ 10% · ต้องอนุมัติ</span></div></div></div></section>
+
+    <section class="page" id="connections"><article class="hero-card"><div><p class="eyebrow">Connections</p><h2>OAuth / API Center</h2><p>Secret และ Refresh Token เก็บเฉพาะฝั่ง Server; Supabase ใช้ฐานที่ 2 CpiPOS-002</p></div></article><div class="module-grid"><article class="panel"><h3>Supabase</h3><p>Target ref: <code>kawenyvpentwgugtzqec</code></p><span class="pill ready">Configured</span></article><article class="panel"><h3>Google Search Console</h3><p>Integration แรกที่ควรเปิดจริงแบบ Read-only</p><button class="ghost-btn connect-btn" data-provider="Search Console">Connect</button></article><article class="panel"><h3>Meta</h3><p>รอ App/OAuth credentials</p><button class="ghost-btn connect-btn" data-provider="Meta">Connect</button></article><article class="panel"><h3>YouTube</h3><p>รอ Google OAuth credentials</p><button class="ghost-btn connect-btn" data-provider="YouTube">Connect</button></article></div></section>
+  </main>
+</div>
+
+<div class="modal" id="campaignModal" aria-hidden="true"><div class="modal-card"><button class="modal-close" data-close>×</button><p class="eyebrow">Campaign Draft</p><h2>สร้างแคมเปญ</h2><label>ชื่อแคมเปญ<input value="CpIPOS - Lead Generation"></label><label>ช่องทาง<select><option>Meta Ads</option><option>Google Ads</option></select></label><label>งบต่อวัน<input type="number" value="300"></label><p class="safe-note">V0.1 บันทึกเป็น Draft จำลองเท่านั้น ยังไม่ส่งไปแพลตฟอร์มโฆษณา</p><button class="primary-btn" id="saveMockCampaign">บันทึก Draft</button></div></div>
+<div class="toast" id="toast"></div>
+<script src="./app.js"></script>
+</body>
+</html>
