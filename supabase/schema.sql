@@ -1,6 +1,7 @@
 -- CPI Marketing Hub initial database schema
--- Target Supabase project: CpiPOS-002
--- Project ref: kawenyvpentwgugtzqec
+-- Target Supabase project: CpiPOS-Communications
+-- Project ref: wznixoeezgyhtwurcswb
+-- Marketing data must remain logically isolated from existing Support/Contact tables.
 --
 -- Security posture for V0.1:
 --   * RLS enabled on every public table.
